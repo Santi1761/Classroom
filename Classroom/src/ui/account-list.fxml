@@ -10,25 +10,24 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane prefHeight="399.0" prefWidth="600.0">
+      <Pane prefHeight="473.0" prefWidth="671.0">
          <children>
-            <Label fx:id="nameUser" layoutX="392.0" layoutY="31.0" text="a" />
+            <Label fx:id="nameUser" layoutX="392.0" layoutY="31.0" />
             <Button layoutX="534.0" layoutY="27.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: blue;" text="Log out" textFill="WHITE" />
-            <Label alignment="CENTER" layoutX="215.0" layoutY="89.0" prefHeight="25.0" prefWidth="192.0" text="User account list">
+            <Label alignment="CENTER" layoutX="258.0" layoutY="88.0" prefHeight="25.0" prefWidth="192.0" text="User account list">
                <font>
                   <Font name="Arial Rounded MT Bold" size="19.0" />
                </font>
             </Label>
-            <TableView layoutX="74.0" layoutY="125.0" prefHeight="241.0" prefWidth="474.0">
+            <TableView fx:id="tvList" layoutX="117.0" layoutY="138.0" prefHeight="241.0" prefWidth="474.0">
               <columns>
-                <TableColumn prefWidth="78.0" text="Username" />
-                  <TableColumn prefWidth="93.0" text="Gender" />
-                  <TableColumn prefWidth="83.0" text="Career" />
-                  <TableColumn prefWidth="106.0" text="Birthday" />
-                <TableColumn prefWidth="113.0" text="Browser" />
+                <TableColumn fx:id="aName" prefWidth="78.0" text="Username" />
+                  <TableColumn fx:id="aGender" prefWidth="93.0" text="Gender" />
+                  <TableColumn fx:id="aCarrer" prefWidth="83.0" text="Career" />
+                  <TableColumn fx:id="aBirthday" prefWidth="106.0" text="Birthday" />
+                <TableColumn fx:id="aBrowser" prefWidth="113.0" text="Browser" />
               </columns>
             </TableView>
             <ImageView fx:id="photoUser" fitHeight="67.0" fitWidth="64.0" layoutX="443.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />

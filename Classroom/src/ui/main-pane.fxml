@@ -9,10 +9,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane prefHeight="325.0" prefWidth="341.0">
+      <Pane fx:id="mainPane" prefHeight="325.0" prefWidth="341.0">
          <children>
             <Label layoutX="137.0" layoutY="41.0" prefHeight="39.0" prefWidth="172.0" text="Sign in to Classroom">
                <font>
@@ -24,19 +23,19 @@
                   <Font name="Britannic Bold" size="20.0" />
                </font>
             </Label>
-            <TextField layoutX="200.0" layoutY="125.0" onAction="#writeUser" />
+            <TextField fx:id="writeUser" layoutX="200.0" layoutY="125.0" />
             <Label layoutX="68.0" layoutY="167.0" prefHeight="30.0" prefWidth="92.0" text="Password:">
                <font>
                   <Font name="Britannic Bold" size="20.0" />
                </font>
             </Label>
-            <TextField layoutX="200.0" layoutY="169.0" onAction="#writePassword" />
-            <Button layoutX="108.0" layoutY="221.0" mnemonicParsing="false" onAction="#createUser" prefHeight="37.0" prefWidth="92.0" style="-fx-background-color: blue;" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
+            <TextField fx:id="writePassword" layoutX="200.0" layoutY="169.0" />
+            <Button fx:id="btnSignup" layoutX="108.0" layoutY="221.0" mnemonicParsing="false" onAction="#createUser" prefHeight="37.0" prefWidth="92.0" style="-fx-background-color: blue;" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="257.0" layoutY="221.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="39.0" prefWidth="92.0" style="-fx-background-color: blue;" text="Log In" textFill="WHITE">
+            <Button fx:id="btnLogin" layoutX="257.0" layoutY="221.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="39.0" prefWidth="92.0" style="-fx-background-color: blue;" text="Log In" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
